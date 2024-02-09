@@ -405,7 +405,7 @@ sudo journalctl -u namadad.service -f --output cat
 ~~~
 ## Grafana
 ~~~
-wget https://raw.githubusercontent.com/catsmile100/Validator-Testnet/main/Namada%20Shielded%20Epedition/grafana.sh
+wget https://github.com/Winnode/Validator-Testnet-main/blob/main/Namada%20Shielded%20Epedition/grafana.sh
 ~~~
 ~~~
 chmod +x grafana.sh
