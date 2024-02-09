@@ -2,7 +2,7 @@
 
 <p align="center">  
     
-![NAANROIDNAM](https://github.com/catsmile100/Validator-Testnet/assets/85368621/40f8ceab-7c3f-4003-8059-ad9dee7b3c97)
+![NAANROIDNAM](https://github.com/Winnode/Validator-Testnet-main/blob/main/Namada%20Shielded%20Epedition/301819876-40f8ceab-7c3f-4003-8059-ad9dee7b3c97.gif)
 
 </p>
 
