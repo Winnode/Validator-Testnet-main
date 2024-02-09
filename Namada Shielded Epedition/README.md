@@ -290,8 +290,8 @@ namadac claim-rewards --validator $VALIDATOR_ADDRESS
 ~~~
 
 ## Wallet operations
-~~~
-Create test wallets
+
+##Create test wallets
 ~~~
 namada wallet gen --alias ${WALLET}1
 ~~~
@@ -299,12 +299,12 @@ namada wallet gen --alias ${WALLET}1
 namada wallet gen --alias ${WALLET}2
 ~~~
 
-Restore existing wallets
+##Restore existing wallets
 ~~~
 namada wallet derive --alias ${WALLET}1
 ~~~
 
-Find your wallet address
+##Find your wallet address
 
 ~~~
 namada wallet find --alias ${WALLET}1
@@ -314,17 +314,17 @@ namada wallet find --alias ${WALLET}1
 
 >After a couple of minutes, the check the balance
 
-Check balance
+##Check balance
 ~~~
 namada client balance --owner ${WALLET}1
 ~~~
 
-Check keys
+##Check keys
 ~~~
 namada wallet list
 ~~~
 
-Send payment from your address to other address
+##Send payment from your address to other address
 
 ~~~
 namada client transfer --source ${WALLET}1 --target ${WALLET}2 --token NAM --amount 100 --signing-keys ${WALLET}1
@@ -332,19 +332,19 @@ namada client transfer --source ${WALLET}1 --target ${WALLET}2 --token NAM --amo
 
 ## Vote
 
-Check consensus state
+##Check consensus state
 
 ~~~
 curl -s localhost:26657/consensus_state | jq .result.round_state.height_vote_set[0].prevotes_bit_array
 ~~~
 
-Full consensus state
+##Full consensus state
 
 ~~~
 curl -s localhost:26657/dump_consensus_state | jq
 ~~~
 
-Your validator votes (prevote)
+##Your validator votes (prevote)
 
 ~~~
 curl -s http://localhost:26657/dump_consensus_state | jq '.result.round_state.votes[0].prevotes' | grep $(curl -s http://localhost:26657/status | jq -r '.result.validator_info.address[:12]')
